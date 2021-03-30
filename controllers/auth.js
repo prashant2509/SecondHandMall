@@ -14,15 +14,15 @@ var db=mysql.createConnection({
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'vivekvirendra4@gmail.com',
-      pass: 'killedar123'
+      user: 'Enter your mail',
+      pass: 'your password'
     }
   });
 
 
   var mailOptions_1 = {
-    from: 'vivekvirendra4@gmail.com',
-    to: ('prashant.dilpak16@gmail.com'),
+    from: 'Enter your mail',
+    to: ('Enter the person mail you want to send'),
     subject: 'upload successfull',
     text: `product uploaded successfull on second_hand_mall`
     // html: '<h1>Hi Smartherd</h1><p>Your Messsage</p>'        
@@ -30,16 +30,16 @@ var transporter = nodemailer.createTransport({
 
 
   var mailOptions_2 = {
-    from: 'vivekvirendra4@gmail.com',
-    to: ('prashant.dilpak16@gmail.com'),
+    from: 'Enter your mail',
+    to: ('Enter the person mail you want to send'),
     subject: 'order placed',
     text: `congratulations, order placed successfull`
     // html: '<h1>Hi Smartherd</h1><p>Your Messsage</p>'        
   };
 
   var mailOptions_3 = {
-    from: 'vivekvirendra4@gmail.com',
-    to: ('prashant.dilpak16@gmail.com'),
+    from: 'Enter your mail',
+    to: ('Enter the person mail you want to send'),
     subject: 'Registered...',
     text: `registered success on second_hand_mall.com`
     // html: '<h1>Hi Smartherd</h1><p>Your Messsage</p>'        
