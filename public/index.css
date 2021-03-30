@@ -1,0 +1,141 @@
+nav{
+    background-color: rgb(99, 96, 96);
+    color: white;
+    padding:30px 60px;
+    display:flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+nav li{
+    list-style:none;
+}
+
+nav li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    padding:5px 8px;
+}
+nav li a:hover{
+    color:yellow;
+    text-decoration:none;
+    
+}
+
+ 
+  a:link {
+      color: green;
+      background-color: transparent;
+      text-decoration: none;
+      font-size: 110%;  
+    }
+    a:visited {
+      color:rgb(7, 7, 7);
+      background-color: transparent;
+      text-decoration: none;
+      font-size: 160%;  
+    }
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+      font-size: 150%;  
+    }
+    a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+      font-size: 100%;  
+    }
+
+
+
+    .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      
+      .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+      }
+      
+      .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+      }
+      
+      .top-right {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+      }
+      
+      .bottom-right {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+      }
+      
+      .centered {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+  
+      h1{
+        text-shadow: 0 0 3px #080808, 0 0 5px #0a0a0a;
+          color: rgb(2, 2, 2);
+          font-size: 35px;
+      }
+
+      h1 {
+        text-shadow: 2px 2px #e4c7c7;
+        padding-right: 150px;
+      }
+
+      h5{
+        text-shadow: 0 0 3px #030303, 0 0 5px #0c0c0c;
+          color: rgb(49, 42, 42);
+          font-size: 35px;
+    
+   
+   
+}
+
+h3{
+    text-shadow: 0 0 3px #fa0707, 0 0 5px #f32d2d;
+      color: rgb(49, 42, 42);
+      font-size: 35px;
+
+
+
+}
+
+p{
+    color: rgb(12, 12, 12);
+    font-weight: bold;
+    padding: 4px;
+    text-transform: uppercase;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 120%;   
+}
+
+body {
+    background-image: url("/images/d.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 120%;
+    
+  }
