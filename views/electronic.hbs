@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<nav>
+    <h2>Second Hand Mall</h2>
+    <ul>
+         <li><a href="/">Home</a></li>
+        <li><a href="/admin_registration">Admin Registration</a></li>
+        <li><a href="/admin_login">Admin Login</a></li>
+         <li><a href="/sell">Sell</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+        <li><a href="/cart">Cart</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+</nav>
+
+
+<form action="/auth/electronic" method="POST">
+
+
+<div class="container">
+<div class="row">
+  <div class="col-sm-4">
+
+    {{#each result}}
+    <div class="card">
+     {{!-- <img src="http://localhost:8000/images/upload_images/{{this.image}}" class="card-img-top" alt="..." width="100" height="250"> --}}
+      <img src="/images/upload_images/{{this.image}}" class="card-img-top" alt="..." width="100" height="250">
+      <div class="card-body">
+        <h5 class="card-title">{{this.p_name}}</h5>
+        <p class="card-text">{{this.description}}</p>
+        <p class="card-text">Price: {{this.price}}</p>
+
+        <a href="/proceed_payment/{{this.p_id}}" ><button type="button" class="btn btn-primary">Buy</button></a>
+        {{!-- <a href="vehicle" class="btn btn-primary">View Here</a> --}}
+      </div>
+    </div>
+    {{/each}}
+
+  </div>
+ </div> 
+</div>
+
+
+
+
+
+</form>
+    
+
+
+
+
+</body>
+</html>

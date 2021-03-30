@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang-"en">
+
+<head>
+  <meta charset="UTF">
+ 
+  <link rel="stylesheet" href="/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Second Hand Mall</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="/">Home</a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="/login">Login</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/register">Registration</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/sell">Sell</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/admin_registration">Admin_Registration</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/admin_login">Admin_Login</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/logout">Logout</a>
+    </li>
+  </ul>
+</nav>
+
+
+  <div>
+    <a href='register'>
+      <marquee style="font-size:30px;color:rgb(12, 12, 12)"><b><i><u>Best Place for buying and selling goods and
+              services!!!!</u></i></b></marquee>
+    </a>
+  </div>
+
+<br>
+<br>
+ <u><b><h1 class="text-center">Welcome To Second Hand Mall</h1></b></u>
+<br>
+
+ <u><b><h1 class="text-sm-left" >Catagory</h1></b></u>
+<br>
+  <div class="container">
+    <div class="row">
+      <form action="/auth/vehicle" method="POST">
+        <div class="col-sm-4" style="background-color:rgb(7, 7, 7);">
+          <div class="card">
+            <img src="images/xuv.jpg" class="card-img-top" alt="..." width="100" height="250">
+            <div class="card-body">
+              <h3 class="card-title">Vehicles</h3>
+              <p class="card-text">Find the best Second Hand Car Sell price and valuation in India! Sell your used Car Sell, 
+                Maruti Suzuki Swift, Toyota </p>
+              {{!-- <a href="vehicle" class="btn btn-primary">View Here</a> --}}
+              <button type="submit" class="btn btn-primary">Vehicle</button>
+            </div>
+          </div>
+        </div>
+      </form>
+     <hr>
+      <form action="/auth/fashion" method="POST">
+        <div class="col-sm-4" style="background-color:rgb(7, 7, 7);">
+          <div class="card">
+            <img src="images/fashion.jpeg" class="card-img-top" alt="..." width="100" height="250">
+            <div class="card-body">
+              <h3 class="card-title">Fashion</h3>
+              <p class="card-text">Buy and sell second hand Fashion in India. SHM provides the best 
+                Free Online Classified Advertising in India.</p>
+              {{!-- <a href="vehicle" class="btn btn-primary">View Here</a> --}}
+              <button type="submit" class="btn btn-primary">Vehicle</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <hr>
+      <form action="/auth/electronic" method="POST">
+        <div class="col-sm-4" style="background-color:rgb(15, 15, 15);">
+          <div class="card">
+            <img src="images/head.jpg" class="card-img-top" alt="..." width="100" height="250">
+            <div class="card-body">
+              <h3 class="card-title">Electronics</h3>
+              <p class="card-text">Buy and sell second hand Electronics & Appliances in India.
+                 SHM provides the best Free Online Classified Advertising in India.</p>
+              {{!-- <a href="electronic" class="btn btn-primary">View Here</a> --}}
+              <button type="submit" class="btn btn-primary">Electronics</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+  
+</body>
+
+</html>
