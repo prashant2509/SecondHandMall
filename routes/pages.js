@@ -39,7 +39,6 @@ router.get("/proceed_payment/:id",authController.proceed_payment);
 
 router.get("/update/:id",authController.update);
 
-router.get("/cart",authController.cart);
 
 
 router.get("/secret",authorise,(req,res)=>{
