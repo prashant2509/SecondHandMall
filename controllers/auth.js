@@ -199,7 +199,7 @@ exports.sell=(req,res)=>{
     image.mv('public/images/upload_images/'+image.name,function(err){
         if(err) return res.status(500).send(err);
 
-        //iske andar mysql wala insert code likho
+        // mysql insert code
         var sql = "INSERT INTO `product`(`p_name`,`category`,`price`,`image`, `description`) VALUES ('" + p_name + "','" + p_category + "','" + price + "','" + image_name + "','" + description + "')";
     						var query = db.query(sql, function(err, result) {
                         if(err){
@@ -220,7 +220,7 @@ exports.sell=(req,res)=>{
 
 
      
- //selling table ka code
+ //selling table code
 
  db.query('SELECT * FROM user WHERE active="true"',async(err,u_result)=>{
     if(err){
@@ -242,11 +242,11 @@ exports.sell=(req,res)=>{
                 if(err){
                     console.log(err);
                 }
-            }); //selling wala
+            }); 
 
 
 
-        });//p_id wala
+        });//p_id 
 
     });//active:true
 
