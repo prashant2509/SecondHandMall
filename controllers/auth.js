@@ -236,7 +236,7 @@ exports.sell=(req,res)=>{
                 if(err){
                     console.log(err);
                 }
-            }); //selling wala   
+            }); //selling part  
 
             db.query('INSERT INTO cart SET ?',{u_id:u_result[0].u_id,p_id:p_result[0].p_id},(err,result)=>{
                 if(err){
@@ -262,7 +262,7 @@ exports.sell=(req,res)=>{
            
    
 
-}// sell export wala
+}// sell export part
 
 
 exports.get_electronic=(req,res)=>{
@@ -312,7 +312,7 @@ exports.proceed_payment=(req,res)=>{
     });
 
     
-//selling table ka code
+//selling table code
 
 db.query('SELECT * FROM user WHERE active="true"',async(err,u_result)=>{
     if(err){
@@ -328,18 +328,18 @@ db.query('SELECT * FROM user WHERE active="true"',async(err,u_result)=>{
                 if(err){
                     console.log(err);
                 }
-            }); //selling wala  
+            });   
             
             db.query('INSERT INTO cart SET ?',{u_id:u_result[0].u_id,p_id:p_result[0].p_id},(err,result)=>{
                 if(err){
                     console.log(err);
                 }
-            }); //selling wala 
+            }); 
 
 
 
 
-        });//p_id wala
+        });
 
     });//active:true
 
